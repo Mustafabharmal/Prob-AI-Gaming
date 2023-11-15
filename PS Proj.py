@@ -10,7 +10,7 @@ from openai import Completion
 import math
 import os 
 
-openai.api_key = "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"
+openai.api_key = "Your API Key"
 
 root = tk.Tk()
 root.state("zoomed")#"%dx%d" % (width, height)
