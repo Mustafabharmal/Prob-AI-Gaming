@@ -1,12 +1,14 @@
 import tkinter as tk
 from tkinter import *
 from tkinter import *
+from tkinter import Tk, PhotoImage, Label
 from tkinter import messagebox
 from PIL import ImageTk, Image
 import random
 import openai
 from openai import Completion
 import math
+import os 
 
 openai.api_key = "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"
 
@@ -14,52 +16,52 @@ root = tk.Tk()
 root.state("zoomed")#"%dx%d" % (width, height)
 root.wm_title('Home Page')
 
-bg = PhotoImage(file = "Img\BGFinal.png")
+bg = PhotoImage(file = "/Users/mrperfect/Work/Project/Prob-AI-Gaming/Img/BGFinal.png")
 img_label = tk.Label( root, image = bg)
 img_label.place(x = 0, y = 0)
 
 
-BRock=PhotoImage(file=r"Img\StoneF.png")
+BRock=PhotoImage(file=r"/Users/mrperfect/Work/Project/Prob-AI-Gaming/Img/StoneF.png")
 BRock = BRock.zoom(5) #with 250, I ended up running out of memory
 BRock = BRock.subsample(10) 
 
-BSessior=PhotoImage(file=r"Img\SessiorF.png")
+BSessior=PhotoImage(file=r"/Users/mrperfect/Work/Project/Prob-AI-Gaming/Img/SessiorF.png")
 BSessior = BSessior.zoom(5) #with 250, I ended up running out of memory
 BSessior = BSessior.subsample(10) 
 
-BPaper=PhotoImage(file=r"Img\PaperF.png")
+BPaper=PhotoImage(file=r"/Users/mrperfect/Work/Project/Prob-AI-Gaming/Img/PaperF.png")
 BPaper = BPaper.zoom(5) #with 250, I ended up running out of memory
 BPaper = BPaper.subsample(10) 
 
-LDPlayer=PhotoImage(file=r"Img\default.jpg")
+LDPlayer=PhotoImage(file=r"/Users/mrperfect/Work/Project/Prob-AI-Gaming/Img/default.jpg")
 LDPlayer = LDPlayer.zoom(6) #with 250, I ended up running out of memory
 LDPlayer = LDPlayer.subsample(10) 
 
-LDComputer=PhotoImage(file=r"Img\defaultFlip.jpg")
+LDComputer=PhotoImage(file=r"/Users/mrperfect/Work/Project/Prob-AI-Gaming/Img/defaultFlip.jpg")
 LDComputer = LDComputer.zoom(6) #with 250, I ended up running out of memory
 LDComputer = LDComputer.subsample(10) 
 
-LPPlayer=PhotoImage(file=r"Img\paper.jpg")
+LPPlayer=PhotoImage(file=r"/Users/mrperfect/Work/Project/Prob-AI-Gaming/Img/paper.jpg")
 LPPlayer = LPPlayer.zoom(5) #with 250, I ended up running out of memory
 LPPlayer = LPPlayer.subsample(10) 
 
-LPComputer=PhotoImage(file=r"Img\paperFlip.jpg")
+LPComputer=PhotoImage(file=r"/Users/mrperfect/Work/Project/Prob-AI-Gaming/Img/paperFlip.jpg")
 LPComputer = LPComputer.zoom(5) #with 250, I ended up running out of memory
 LPComputer = LPComputer.subsample(10) 
 
-LSPlayer=PhotoImage(file=r"Img\scissor.jpg")
+LSPlayer=PhotoImage(file=r"/Users/mrperfect/Work/Project/Prob-AI-Gaming/Img/scissor.jpg")
 LSPlayer = LSPlayer.zoom(5) #with 250, I ended up running out of memory
 LSPlayer = LSPlayer.subsample(10) 
 
-LSComputer=PhotoImage(file=r"Img\scissorFlip.jpg")
+LSComputer=PhotoImage(file=r"/Users/mrperfect/Work/Project/Prob-AI-Gaming/Img/scissorFlip.jpg")
 LSComputer = LSComputer.zoom(5) #with 250, I ended up running out of memory
 LSComputer = LSComputer.subsample(10) 
 
-LRPlayer=PhotoImage(file=r"Img\rock.jpg")
+LRPlayer=PhotoImage(file=r"/Users/mrperfect/Work/Project/Prob-AI-Gaming/Img/rock.jpg")
 LRPlayer = LRPlayer.zoom(5) #with 250, I ended up running out of memory
 LRPlayer = LRPlayer.subsample(10) 
 
-LRComputer=PhotoImage(file=r"Img\rockFlip.jpg")
+LRComputer=PhotoImage(file=r"/Users/mrperfect/Work/Project/Prob-AI-Gaming/Img/rockFlip.jpg")
 LRComputer = LRComputer.zoom(5) #with 250, I ended up running out of memory
 LRComputer = LRComputer.subsample(10) 
 arr=[0,0]
