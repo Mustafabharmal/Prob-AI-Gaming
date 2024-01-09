@@ -64,7 +64,8 @@ The project is organized into three main sections:
 - NumPy (for mathematical operations)
 
 ## Developed By:
-- [Mustafa Bharmal][https://github.com/Mustafabharmal]
-- [Yash Vara][https://github.com/yashvara]
+
+- [Mustafa Bharmal](https://github.com/Mustafabharmal)
+- [Yash Vara](https://github.com/yashvara)
 
 Feel free to explore and contribute to Prob-AI-Gaming! 🚀
