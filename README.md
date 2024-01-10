@@ -68,4 +68,12 @@ The project is organized into three main sections:
 - [Mustafa Bharmal](https://github.com/Mustafabharmal)
 - [Yash Vara](https://github.com/yashvara)
 
-Feel free to explore and contribute to Prob-AI-Gaming! 🚀
+## Copyright Information 🇮🇳
+
+**This project is Copyrighted by the Govt. of India 📜**
+
+Explore the Certificate: [Copyright Certificate](Document/6600-2023-CO-SW-Certificate)
+
+🚫 Unauthorized use, reproduction, or distribution is strictly prohibited without permission from the authorities.
+
+Your respect for intellectual property is appreciated! 🙏
